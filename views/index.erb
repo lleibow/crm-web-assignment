@@ -5,7 +5,7 @@
 
         <% Contact.all.each do |contact| %>
           <div class ="all-info">
-            <li class="listed-contact"><%= contact.first_name %> <%= contact.last_name %> : <%=contact.note%></li>
+            <li class="listed-contact"> <a href="/<%=contact.id%>"> <%= contact.first_name %> <%= contact.last_name %> : <%=contact.note%></a></li>
             <span class ="edit-delete"> Edit </span><span class="edit-delete">Delete</span></div>
         <% end %>
   </ul>

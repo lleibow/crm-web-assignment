@@ -23,7 +23,7 @@ get '/about' do
   erb :about
 end
 
-get '/contacts/:id' do
+get '/:id' do
   @contact = Contact.find(params[:id].to_i)
   erb :show_contact
 end
