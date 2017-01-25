@@ -6,6 +6,8 @@ require 'sinatra'
 
 ## Temporary fake data so that we always find contact with id 1.
 Contact.create('Betty', 'Maker', 'betty@bitmakerlabs.com', 'Developer')
+Contact.create('Johnny', 'Boner', 'johnyb@boner.nober', 'boner lover')
+
 
 get '/' do
   erb :index
@@ -21,10 +23,11 @@ get '/about' do
   erb :about
 end
 
-get '/contacts/1' do
-  @contact = Contact.find(1)
+get '/contacts/:id' do
+  @contact = Contact.find(params[:id].to_i)
   erb :show_contact
 end
+
 
 post '/' do
   Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
