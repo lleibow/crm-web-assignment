@@ -5,7 +5,40 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="/styles.css">
   </head>
+
   <body>
+    <header class="main-header">
+      <ul>
+
+        <li class = "app-name">
+          Laura's CRM
+        </li>
+
+        <nav class="header-nav">
+
+            <li>
+              <a href="/">Home</a>
+            </li>
+
+            <li>
+              <a href="/new">Add a contact</a>
+            </li>
+
+            <li>
+              <a href="/about">About</a>
+            </li>
+
+        </nav>
+
+      </ul>
+    </header>
+
     <%= yield %>
+    <footer>
+      <p> © Bitmaker 2016
+      </p>
+    </footer>
+
   </body>
+
 </html>

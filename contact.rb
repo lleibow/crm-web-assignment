@@ -108,6 +108,9 @@ class Contact
 
 end
 
+Contact.create("Laura", "Leibow", "lauraleibow@gmail.com", "cool")
+Contact.create("Ryan", "Shmyan", "bigdong@dongmail.com", "It's big, I swear")
+
 #tests
 # Copy your entire Contact class from the old crm assignment here.
 # Then, run the following at the command line:

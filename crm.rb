@@ -4,20 +4,23 @@
 require_relative 'contact'
 require 'sinatra'
 
+
+
 get '/' do
-  @crm_app_name = "Laura's CRM"
   erb :index
+  #erb :layout
 end
 
-get '/contacts' do
-  erb :contacts
-end
 
-get '/contacts/new' do
+get '/new' do
   erb :new_contact
 end
 
-post '/contacts' do
+get '/about' do
+  erb :about
+end
+
+post '/' do
   Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
   redirect to('/contacts')
 end
