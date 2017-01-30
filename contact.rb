@@ -7,7 +7,7 @@ ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: 'crm-web.s
 class Contact < ActiveRecord::Base
 
   field :first_name, as: :string
-  field :last_name,  as: :storing
+  field :last_name,  as: :string
   field :email,      as: :string
   field :note,       as: :text
 
