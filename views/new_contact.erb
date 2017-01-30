@@ -1,9 +1,17 @@
-<h1>Create new Contact</h1>
+<h1>Create a new contact</h1>
+<div class="create-container">
+  <form action ="/contacts" method="post">
+    <label for="first_name">First Name</label>
+    <input id="first_name" type="text" name="first_name" class="input-box">
 
-<form action='/contacts' method='post'>
-  <input type='text' name='first_name'>
-  <input type='text' name='last_name'>
-  <input type='text' name='email'>
-  <input type='text' name='note'>
-  <input type='submit' value='New Contact'>
-</form>
+    <label for="last_name">Last Name</label>
+    <input id="last_name" type="text" name="last_name" class="input-box">
+
+    <label for="email">Email</label>
+    <input id="email" type="text" name="email" class="input-box">
+
+    <label for="note">Note</label>
+    <input id="note" type="text" name="note" class="input-box">
+    <input type="submit" value="New Contact" class="input-box">
+  </form>
+</div>
